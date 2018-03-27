@@ -5,17 +5,25 @@
 
 # Twitter Bot
 
-[![Join the chat at https://gitter.im/rhiever/TwitterFollowBot](https://badges.gitter.im/rhiever/TwitterFollowBot.svg)](https://gitter.im/rhiever/TwitterFollowBot?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 A Python bot that automates several actions on Twitter, such as following users and favoriting tweets.
 
-## Notice: Repository is no longer being maintained
+## Forker's notice
 
-Twitter has started cracking down heavily on users who use bots like this one to follow users or favorite tweets en masse. For that reason, I am no longer developing this code repository but will leave it up for anyone who wants to use it as a code base for future projects. Please respect the [software license](https://github.com/rhiever/TwitterFollowBot/blob/master/LICENSE) if you use the code from this repository.
+Since the original is no longer being maintained, I am adding some extra functionality to the repo that I wish to have.
+
+I will be adding some criteria to follows to only follow people matching specific criteria. This will likely include location, number of tweets, following/follower ratio and gender.
+
+This criteria should help narrow down the users followed to those you want to follow, or those that will likely follow back.
+
+## Want to contribute?
+
+I'm happy for any contributions and will review them all as soon as I can. Make sure to add a description so I know exactly what the change is!
 
 ## Disclaimer
 
 I hold no liability for what you do with this bot or what happens to you by using this bot. Abusing this bot *can* get you banned from Twitter, so make sure to read up on [proper usage](https://support.twitter.com/articles/76915-automation-rules-and-best-practices) of the Twitter API.
+
+The application will not be instant, there will be a delay between each follow to avoid rate limiting and bans. Since you get 180 requests per 15 minutes, there will be a 5 second delay between each follow. This may be adjusted in future, and this readme will be kept up to date. 
 
 ## Installation
 
@@ -226,7 +234,3 @@ You will need to manually edit the code if you want to add special users that wi
 In the example above, the bot will try to add 10 users to the twitterbot-list that are tweeting #TwitterBot.
 
 Remember that the max number of users in a list is 5000.
-    
-## Have questions? Need help with the bot?
-
-If you're having issues with or have questions about the bot, [file an issue](https://github.com/rhiever/TwitterFollowBot/issues) in this repository so one of the project managers can get back to you. **Please [check the existing (and closed) issues](https://github.com/rhiever/TwitterFollowBot/issues?q=is%3Aissue) to make sure your issue hasn't already been addressed.**
